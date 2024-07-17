@@ -8,5 +8,5 @@ def age_category(age):
     return result
 
 result_df = df.copy()
-result_df['연령대'] = result_df['나이'].apply(age_category)
+result_df['연령대'] = result_df['나이'].apply(age_category) # 새로운 시리즈를 반환하고, 시리즈를 이용해 새로운 컬럼을 생성하거나 기존 컬럼을 수정합니다.
 result_df
