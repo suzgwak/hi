@@ -1,0 +1,12 @@
+def age_category(age):
+    # 함수 내용을 채워주세요
+    if age < 30:
+        result = 'Young'
+    else:
+        result = 'Adult'
+        
+    return result
+
+result_df = df.copy()
+result_df['연령대'] = result_df['나이'].apply(age_category)
+result_df
